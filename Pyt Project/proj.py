@@ -1,5 +1,15 @@
 import random, time
+from pystyle import Colors, Colorate
+print(Colorate.Horizontal(Colors.blue_to_cyan,"""
 
+██████╗ ███████╗ ██████╗ ██████╗ ██████╗ ███████╗
+██╔══██╗██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝
+██║  ██║█████╗  ██║     ██║   ██║██║  ██║█████╗  
+██║  ██║██╔══╝  ██║     ██║   ██║██║  ██║██╔══╝  
+██████╔╝███████╗╚██████╗╚██████╔╝██████╔╝███████╗
+╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝
+                                                            
+""",1))
 password = input("Enter Password:")
 
 characters = ["0","1","2","3","4","5","6","7","8","9"]
@@ -23,3 +33,4 @@ while True:
         print(f"{tryPasswordTries} | Invalid |{tryPassword} ")
 
     tryPassword = ""        
+     
